@@ -29,11 +29,14 @@ from rest_framework import generics, viewsets
 class BandViewSet(viewsets.ModelViewSet):
 	queryset = Band.objects.all()
 	serializer_class = BandSerializer
+	lookup_field = ('name')
 
 class AlbumViewSet(viewsets.ModelViewSet):
 	queryset = Album.objects.all()
 	serializer_class = AlbumSerializer
+	lookup_field = ('title')
 
 class SongViewSet(viewsets.ModelViewSet):
 	queryset = Song.objects.all()
 	serializer_class = SongSerializer
+	lookup_field = ('title')

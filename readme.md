@@ -10,8 +10,6 @@ GET /songs/ - Get a list of all songs
 
 POST Endpoints:
 
-POST /bands/ - Get a list of all bands
-POST /bands/{artist_name} - Get a specific band's page
-POST /albums/ - Get a list of all albums
-POST /albums/{album_name} - Get a specific album
-POST /songs/ - Get a list of all songs
+POST /bands/ - Add a new band
+POST /albums/ - Add a new album
+POST /songs/ - Add a new song
